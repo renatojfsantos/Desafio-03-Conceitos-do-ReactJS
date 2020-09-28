@@ -16,6 +16,8 @@ div {
 div li {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 div li + li {
