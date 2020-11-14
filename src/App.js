@@ -4,7 +4,8 @@ import api from './services/api';
 import "./styles.css";
 
 function App() {
-  const [repositories, setRepositories] = useState([]); 
+  const [repositories, setRepositories] = useState([]);
+  
   useEffect(() => {
     api.get('repositories').then(response => {
       setRepositories(response.data);
